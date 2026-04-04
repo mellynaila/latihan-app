@@ -104,9 +104,7 @@
 
             <h2>Selamat Datang</h2>
 
-            <h3>{{ session('username') }}</h3>
-
-            <p>Anda berhasil login ke sistem.</p>
+            <p>Anda berhasil login ke dashboard.</p>
 
         </div>
 
