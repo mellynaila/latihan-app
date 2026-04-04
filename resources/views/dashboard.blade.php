@@ -108,25 +108,6 @@
 
             <p>Anda berhasil login ke sistem.</p>
 
-            <div class="info">
-
-                <div class="box">
-                    <b>12</b><br>
-                    Data
-                </div>
-
-                <div class="box">
-                    <b>5</b><br>
-                    User
-                </div>
-
-                <div class="box">
-                    <b>8</b><br>
-                    Menu
-                </div>
-
-            </div>
-
         </div>
 
     </div>
