@@ -45,33 +45,13 @@
             text-align: center;
         }
 
-        .card h3 {
-            margin-top: 10px;
-            color: #6b1386;
-        }
-
-        /* info box */
-
-        .info {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 25px;
-        }
-
-        .box {
-            background: #f4f6ff;
-            padding: 15px;
-            border-radius: 8px;
-            width: 90px;
-        }
-
         /* logout button */
 
         button {
             margin-top: 25px;
             padding: 10px 25px;
             border: none;
-            background: #6b0f7e;
+            background: #f11101;
             color: white;
             border-radius: 5px;
             font-size: 14px;
@@ -104,7 +84,7 @@
 
             <h2>Selamat Datang</h2>
 
-            <p>Anda berhasil login ke dashboard.</p>
+            <p>Naila berhasil login ke dashboard.</p>
 
         </div>
 
