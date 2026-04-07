@@ -22,15 +22,6 @@ class LoginController extends Controller
         return back()->with('error', 'Username atau Password salah');
     }
 
-    public function dashboard()
-    {
-        if (!session()->has('username')) {
-            return redirect('/');
-        }
-
-        return view('dashboard');
-    }
-
     public function logout()
     {
         session()->forget('username');
