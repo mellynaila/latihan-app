@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Pengguna extends Model
 {
     use HasFactory;
+
     protected $table = 'pengguna';
+    protected $primaryKey = 'id_pengguna';
+
     protected $fillable = ['email', 'password'];
-    protected $primaryKey = 'id';
+
+    public $timestamps = true;
 }
