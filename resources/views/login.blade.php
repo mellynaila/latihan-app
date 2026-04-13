@@ -2,25 +2,43 @@
 <html>
 
 <head>
-
     <title>Login</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial;
-            background: linear-gradient(120deg, #6a11cb, #5c0da7);
+            background: url("{{ asset('images/bg.jpg') }}") no-repeat center center/cover;
             height: 100vh;
+        }
+
+        /* overlay full layar */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .login-box {
-            background: white;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
             padding: 30px;
             width: 320px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+            color: white;
         }
 
         h2 {
@@ -32,53 +50,55 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
         }
 
         button {
             width: 100%;
             padding: 10px;
-            background: #b8086e;
+            background: #ff4b5c;
             color: white;
             border: none;
-            border-radius: 5px;
-            font-size: 15px;
+            border-radius: 8px;
+            cursor: pointer;
         }
 
         button:hover {
-            background: #a815ad;
+            background: #e63e50;
         }
 
         .error {
-            color: red;
+            color: #ffb3b3;
             text-align: center;
             margin-bottom: 10px;
         }
     </style>
-
 </head>
 
 <body>
 
-    <div class="login-box">
+    <div class="overlay">
 
-        <h2>Login</h2>
+        <div class="login-box">
 
-        @if(session('error'))
-        <p class="error">{{ session('error') }}</p>
-        @endif
+            <h2>LOGIN SEK</h2>
 
-        <form method="POST" action="/login">
-            @csrf
+            @if(session('error'))
+            <p class="error">{{ session('error') }}</p>
+            @endif
 
-            <input type="text" name="username" placeholder="Username">
+            <form method="POST" action="/login">
+                @csrf
 
-            <input type="password" name="password" placeholder="Password">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
 
-            <button type="submit">Login</button>
+                <button type="submit">Login</button>
+            </form>
 
-        </form>
+        </div>
 
     </div>
 

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Pengguna; // WAJIB ditambahkan
 
 class DashboardController extends Controller
 {
@@ -13,8 +12,6 @@ class DashboardController extends Controller
             return redirect('/');
         }
 
-        $data = Pengguna::all(); // ambil data pengguna
-
-        return view('daftarpengguna', compact('data'));
+        return view('dashboard');
     }
 }

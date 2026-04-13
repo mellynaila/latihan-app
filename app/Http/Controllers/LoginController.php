@@ -13,10 +13,10 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        if ($request->username == "naila" && $request->password == "neoculture") {
+        if ($request->username == "naila" && $request->password == "1234") {
 
             session(['username' => $request->username]);
-            return redirect('/dashboard');
+            return redirect('/pengguna');
         }
 
         return back()->with('error', 'Username atau Password salah');
