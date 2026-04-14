@@ -15,4 +15,6 @@ class Pengguna extends Model
     protected $fillable = ['email', 'password'];
 
     public $timestamps = true;
+
+    public $incrementing = true;   // TAMBAHAN
 }

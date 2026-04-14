@@ -66,6 +66,8 @@
                             <th>ID</th>
                             <th>Email</th>
                             <th>Password</th>
+
+
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -76,6 +78,7 @@
                             <td>{{ $item->id_pengguna }}</td>
                             <td>{{ $item->email }}</td>
                             <td>{{ $item->password }}</td>
+
                             <td>
 
                                 <!-- BUTTON EDIT -->
