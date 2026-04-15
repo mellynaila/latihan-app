@@ -13,7 +13,7 @@
 
         body {
             font-family: Arial;
-            background: url("{{ asset('images/bg.jpg') }}") no-repeat center center/cover;
+            background: url("{{ asset('images/bg2.jpg') }}") no-repeat center center/cover;
             height: 100vh;
         }
 
@@ -58,7 +58,7 @@
         button {
             width: 100%;
             padding: 10px;
-            background: #ff4b5c;
+            background: #be8539;
             color: white;
             border: none;
             border-radius: 8px;
@@ -66,7 +66,7 @@
         }
 
         button:hover {
-            background: #e63e50;
+            background: #be8539;
         }
 
         .error {
@@ -83,7 +83,7 @@
 
         <div class="login-box">
 
-            <h2>LOGIN SEK</h2>
+            <h2>Login Perpus</h2>
 
             @if(session('error'))
             <p class="error">{{ session('error') }}</p>
